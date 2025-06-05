@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: check-if-email-exists
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    healthCheckPath: /v0/ping
+    autoDeploy: true
